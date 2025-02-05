@@ -1,0 +1,34 @@
+* {
+  font-family: "Poppins", serif;
+  color: #03045e;
+}
+body {
+  background-color: #fbf8cc;
+}
+.container {
+  background-color: #fbf8cc;
+  height: 100vh;
+}
+.navbar-nav > li {
+  margin-right: 50px;
+}
+.navbar-nav > li :hover {
+  background-color: #dbd9b4;
+}
+/* div {
+  border: 1px solid black;
+} */
+body * {
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
