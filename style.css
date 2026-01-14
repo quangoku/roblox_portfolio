@@ -22,6 +22,37 @@ body * {
   animation: appear 1s ease;
 }
 
+/* Đảm bảo hình ảnh trong card có cùng tỉ lệ */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(180, 182, 58, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 @keyframes appear {
   from {
     opacity: 0;
