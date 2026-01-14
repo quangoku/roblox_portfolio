@@ -10,6 +10,7 @@ jobs:
       - name: Say Hello
         run: echo "building from github action"
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: testing
